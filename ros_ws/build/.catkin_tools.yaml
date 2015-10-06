@@ -1,0 +1,6 @@
+devel_space: /home/shangyi/ws/sandbox/moveit_test_ws/devel
+install: false
+install_space: /home/shangyi/ws/sandbox/moveit_test_ws/install
+profile: default
+source_space: /home/shangyi/ws/sandbox/moveit_test_ws/src
+workspace: /home/shangyi/ws/sandbox/moveit_test_ws

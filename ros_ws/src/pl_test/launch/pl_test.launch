@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<launch>
+  <param name="robot_description" textfile="$(find pl_test)/launch/sphere_robot.urdf"/> 
+  <param name="robot_description_semantic" textfile="$(find pl_test)/launch/sphere_robot.srdf"/>
+
+  <arg name="debug" default="false"/>
+  <arg name="allow_trajectory_execution" default="false"/>
+  <arg name="publish_monitored_planning_scene" default="true"/>
+  <arg name="planning_plugin" value="ompl_interface/OMPLPlanner"/>
+  <arg name="start_state_max_bounds_error" value="0.1" />
+
+
+  <arg name="debug" default="false" />
+  <arg unless="$(arg debug)" name="launch_prefix" value="" />
+  <arg     if="$(arg debug)" name="launch_prefix" value="gdb --ex run --args" />
+
+  <arg name="info" default="$(arg debug)" />  
+  <arg unless="$(arg info)" name="command_args" value="" />
+  <arg     if="$(arg info)" name="command_args" value="--debug" />
+
+  <!-- The request adapters (plugins) used when planning with OMPL. ORDER MATTERS -->
+  <arg name="planning_adapters" value="default_planner_request_adapters/AddTimeParameterization
+    default_planner_request_adapters/FixWorkspaceBounds
+    default_planner_request_adapters/FixStartStateBounds
+    default_planner_request_adapters/FixStartStateCollision
+    default_planner_request_adapters/FixStartStatePathConstraints" />
+
+  <node name="move_group" launch-prefix="$(arg launch_prefix)" pkg="moveit_ros_move_group" type="move_group" respawn="false" output="screen" args="$(arg command_args)">
+    <!-- Set the display variable, in case OpenGL code is used internally -->
+    <env name="DISPLAY" value="$(optenv DISPLAY :0)" />
+
+    <param name="allow_trajectory_execution" value="$(arg allow_trajectory_execution)"/>
+
+    <!-- MoveGroup capabilities to load -->
+    <param name="capabilities" value="move_group/MoveGroupCartesianPathService
+      move_group/MoveGroupExecuteService
+      move_group/MoveGroupKinematicsService
+      move_group/MoveGroupMoveAction
+      move_group/MoveGroupPickPlaceAction
+      move_group/MoveGroupPlanService
+      move_group/MoveGroupQueryPlannersService
+      move_group/MoveGroupStateValidationService
+      move_group/MoveGroupGetPlanningSceneService
+      " />
+
+    <!-- Publish the planning scene of the physical robot so that rviz plugin can know actual robot -->
+    <param name="planning_scene_monitor/publish_planning_scene" value="$(arg publish_monitored_planning_scene)" />
+    <param name="planning_scene_monitor/publish_geometry_updates" value="$(arg publish_monitored_planning_scene)" />
+    <param name="planning_scene_monitor/publish_state_updates" value="$(arg publish_monitored_planning_scene)" />
+    <param name="planning_scene_monitor/publish_transforms_updates" value="$(arg publish_monitored_planning_scene)" />
+
+    <param name="planning_plugin" value="$(arg planning_plugin)" />
+    <param name="request_adapters" value="$(arg planning_adapters)" />
+    <param name="start_state_max_bounds_error" value="$(arg start_state_max_bounds_error)" />
+    <rosparam command="load" file="$(find pl_test)/launch/ompl_planning.yaml"/>
+
+  </node>
+
+  <!--  <node pkg="pl_test" type="pl_test" name="pl_test"/> -->
+</launch>

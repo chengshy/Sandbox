@@ -1,0 +1,8 @@
+prefix=/home/shangyi/ws/sandbox/moveit_test_ws/install
+
+Name: baxter_ikfast_left_arm_plugin
+Description: Description of baxter_ikfast_left_arm_plugin
+Version: 1.0.2
+Cflags: 
+Libs: -L/home/shangyi/ws/sandbox/moveit_test_ws/install/lib 
+Requires: moveit_core pluginlib roscpp tf_conversions

@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "pl_test")
+set(pl_test_MAINTAINER "Shangyi Cheng <chengshangyi@gmail.com>")
+set(pl_test_DEPRECATED "")
+set(pl_test_VERSION "0.0.0")
+set(pl_test_BUILD_DEPENDS "moveit_ros" "tf")
+set(pl_test_RUN_DEPENDS "moveit_ros" "tf")
+set(pl_test_BUILDTOOL_DEPENDS "catkin")

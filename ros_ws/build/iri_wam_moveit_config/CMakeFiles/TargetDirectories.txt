@@ -1,0 +1,8 @@
+/home/shangyi/ws/sandbox/moveit_test_ws/build/iri_wam_moveit_config/CMakeFiles/_catkin_empty_exported_target.dir
+/home/shangyi/ws/sandbox/moveit_test_ws/build/iri_wam_moveit_config/CMakeFiles/clean_test_results.dir
+/home/shangyi/ws/sandbox/moveit_test_ws/build/iri_wam_moveit_config/CMakeFiles/download_extra_data.dir
+/home/shangyi/ws/sandbox/moveit_test_ws/build/iri_wam_moveit_config/CMakeFiles/doxygen.dir
+/home/shangyi/ws/sandbox/moveit_test_ws/build/iri_wam_moveit_config/gtest/CMakeFiles/gtest.dir
+/home/shangyi/ws/sandbox/moveit_test_ws/build/iri_wam_moveit_config/gtest/CMakeFiles/gtest_main.dir
+/home/shangyi/ws/sandbox/moveit_test_ws/build/iri_wam_moveit_config/CMakeFiles/run_tests.dir
+/home/shangyi/ws/sandbox/moveit_test_ws/build/iri_wam_moveit_config/CMakeFiles/tests.dir

@@ -1,0 +1,8 @@
+/home/shangyi/ws/sandbox/moveit_test_ws/build/moveit_robots/CMakeFiles/_catkin_empty_exported_target.dir
+/home/shangyi/ws/sandbox/moveit_test_ws/build/moveit_robots/CMakeFiles/clean_test_results.dir
+/home/shangyi/ws/sandbox/moveit_test_ws/build/moveit_robots/CMakeFiles/download_extra_data.dir
+/home/shangyi/ws/sandbox/moveit_test_ws/build/moveit_robots/CMakeFiles/doxygen.dir
+/home/shangyi/ws/sandbox/moveit_test_ws/build/moveit_robots/gtest/CMakeFiles/gtest.dir
+/home/shangyi/ws/sandbox/moveit_test_ws/build/moveit_robots/gtest/CMakeFiles/gtest_main.dir
+/home/shangyi/ws/sandbox/moveit_test_ws/build/moveit_robots/CMakeFiles/run_tests.dir
+/home/shangyi/ws/sandbox/moveit_test_ws/build/moveit_robots/CMakeFiles/tests.dir

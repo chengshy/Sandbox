@@ -1,0 +1,53 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/shangyi/ws/sandbox/moveit_test_ws/build/baxter_moveit_config/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2378725155/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2378725155.dir/build.make CMakeFiles/cmTryCompileExec2378725155.dir/build
+make[1]: Entering directory `/home/shangyi/ws/sandbox/moveit_test_ws/build/baxter_moveit_config/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/shangyi/ws/sandbox/moveit_test_ws/build/baxter_moveit_config/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2378725155.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2378725155.dir/CheckSymbolExists.c.o   -c /home/shangyi/ws/sandbox/moveit_test_ws/build/baxter_moveit_config/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec2378725155
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2378725155.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec2378725155.dir/CheckSymbolExists.c.o  -o cmTryCompileExec2378725155 -rdynamic 
+CMakeFiles/cmTryCompileExec2378725155.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec2378725155] Error 1
+make[1]: Leaving directory `/home/shangyi/ws/sandbox/moveit_test_ws/build/baxter_moveit_config/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2378725155/fast] Error 2
+
+File /home/shangyi/ws/sandbox/moveit_test_ws/build/baxter_moveit_config/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/shangyi/ws/sandbox/moveit_test_ws/build/baxter_moveit_config/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3585129415/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3585129415.dir/build.make CMakeFiles/cmTryCompileExec3585129415.dir/build
+make[1]: Entering directory `/home/shangyi/ws/sandbox/moveit_test_ws/build/baxter_moveit_config/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/shangyi/ws/sandbox/moveit_test_ws/build/baxter_moveit_config/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3585129415.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec3585129415.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3585129415
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3585129415.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec3585129415.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3585129415 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec3585129415] Error 1
+make[1]: Leaving directory `/home/shangyi/ws/sandbox/moveit_test_ws/build/baxter_moveit_config/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec3585129415/fast] Error 2
+
+

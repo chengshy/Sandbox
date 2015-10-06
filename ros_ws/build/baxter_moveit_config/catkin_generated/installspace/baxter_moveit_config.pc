@@ -1,0 +1,8 @@
+prefix=/home/shangyi/ws/sandbox/moveit_test_ws/install
+
+Name: baxter_moveit_config
+Description: Description of baxter_moveit_config
+Version: 1.0.2
+Cflags: 
+Libs: -L/home/shangyi/ws/sandbox/moveit_test_ws/install/lib 
+Requires: 

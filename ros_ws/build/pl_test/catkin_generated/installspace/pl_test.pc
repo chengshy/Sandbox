@@ -1,0 +1,8 @@
+prefix=/home/shangyi/ws/sandbox/moveit_test_ws/install
+
+Name: pl_test
+Description: Description of pl_test
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/shangyi/ws/sandbox/moveit_test_ws/install/lib 
+Requires: 

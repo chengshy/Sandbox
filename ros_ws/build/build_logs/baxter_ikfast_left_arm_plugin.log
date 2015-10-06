@@ -1,0 +1,55 @@
+[[36mbaxter_ikfast_left_arm_plugin[0m] [1m[34m==>[0m '[1m/home/shangyi/ws/sandbox/moveit_test_ws/build/baxter_ikfast_left_arm_plugin/build_env.sh /usr/bin/cmake /home/shangyi/ws/sandbox/moveit_test_ws/src/moveit_robots/baxter/baxter_ikfast_left_arm_plugin -DCATKIN_DEVEL_PREFIX=/home/shangyi/ws/sandbox/moveit_test_ws/devel -DCMAKE_INSTALL_PREFIX=/home/shangyi/ws/sandbox/moveit_test_ws/install[0m' [30m[1min[0m '[1m/home/shangyi/ws/sandbox/moveit_test_ws/build/baxter_ikfast_left_arm_plugin[0m'[0m
+[36m-- [0mThe C compiler identification is GNU 4.8.4
+[0m[36m-- [0mThe CXX compiler identification is GNU 4.8.4
+[0m[36m-- [0mCheck for working C compiler:[33m /usr/bin/cc
+[0m[0m[36m-- [0mCheck for working C compiler:[33m /usr/bin/cc -- works
+[0m[0m[36m-- [0mDetecting C compiler ABI info
+[0m[36m-- [0mDetecting C compiler ABI info - done
+[0m[36m-- [0mCheck for working CXX compiler:[33m /usr/bin/c++
+[0m[0m[36m-- [0mCheck for working CXX compiler:[33m /usr/bin/c++ -- works
+[0m[0m[36m-- [0mDetecting CXX compiler ABI info
+[0m[36m-- [0mDetecting CXX compiler ABI info - done
+[0m[36m-- [0mUsing CATKIN_DEVEL_PREFIX:[33m /home/shangyi/ws/sandbox/moveit_test_ws/devel
+[0m[0m[36m-- [0mUsing CMAKE_PREFIX_PATH:[33m /home/shangyi/ws/sandbox/moveit_test_ws/devel;/opt/ros/indigo
+[0m[0m[36m-- [0mThis workspace overlays:[33m /home/shangyi/ws/sandbox/moveit_test_ws/devel;/opt/ros/indigo
+[0m[0m[36m-- [0mFound PythonInterp:[33m /usr/bin/python (found version "2.7.6") 
+[0m[0m[36m-- [0mUsing PYTHON_EXECUTABLE:[33m /usr/bin/python
+[0m[0m[36m-- [0mUsing Debian Python package layout
+[0m[36m-- [0mUsing empy:[33m /usr/bin/empy
+[0m[0m[36m-- [0mUsing CATKIN_ENABLE_TESTING:[33m ON
+[0m[0m[36m-- [0mCall enable_testing()
+[0m[36m-- [0mUsing CATKIN_TEST_RESULTS_DIR:[33m /home/shangyi/ws/sandbox/moveit_test_ws/build/baxter_ikfast_left_arm_plugin/test_results
+[0m[0m[36m-- [0mLooking for include file pthread.h
+[0m[36m-- [0mLooking for include file pthread.h - found
+[0m[36m-- [0mLooking for pthread_create
+[0m[36m-- [0mLooking for pthread_create - not found
+[0m[36m-- [0mLooking for pthread_create in pthreads
+[0m[36m-- [0mLooking for pthread_create in pthreads - not found
+[0m[36m-- [0mLooking for pthread_create in pthread
+[0m[36m-- [0mLooking for pthread_create in pthread - found
+[0m[36m-- [0mFound Threads:[33m TRUE  
+[0m[0m[36m-- [0mFound gtest sources under '/usr/src/gtest':[33m gtests will be built
+[0m[0m[36m-- [0mUsing Python nosetests:[33m /usr/bin/nosetests-2.7
+[0m[0m[36m-- [0mcatkin 0.6.14
+[0m[36m-- [0mUsing these message generators:[33m gencpp;genlisp;genpy
+[0m[0m[36m-- [0mFound PkgConfig:[33m /usr/bin/pkg-config (found version "0.26") 
+[0m[0m[36m-- [0mchecking for module 'eigen3'
+[0m[36m-- [0m  found eigen3, version 3.2.0
+[0m[36m-- [0mFound Eigen:[33m /usr/include/eigen3  
+[0m[0m[36m-- [0mEigen found (include:[33m /usr/include/eigen3)
+[0m[0m[36m-- [0mLooking for sgemm_
+[0m[36m-- [0mLooking for sgemm_ - found
+[0m[36m-- [0mA library with BLAS API found.
+[0m[36m-- [0mLooking for cheev_
+[0m[36m-- [0mLooking for cheev_ - found
+[0m[36m-- [0mA library with LAPACK API found.
+[0m[36m-- [0mConfiguring done
+[0m[36m-- [0mGenerating done
+[0m[36m-- [0mBuild files have been written to:[33m /home/shangyi/ws/sandbox/moveit_test_ws/build/baxter_ikfast_left_arm_plugin
+[0m[0m[[36mbaxter_ikfast_left_arm_plugin[0m] [32m<==[0m '[1m/home/shangyi/ws/sandbox/moveit_test_ws/build/baxter_ikfast_left_arm_plugin/build_env.sh /usr/bin/cmake /home/shangyi/ws/sandbox/moveit_test_ws/src/moveit_robots/baxter/baxter_ikfast_left_arm_plugin -DCATKIN_DEVEL_PREFIX=/home/shangyi/ws/sandbox/moveit_test_ws/devel -DCMAKE_INSTALL_PREFIX=/home/shangyi/ws/sandbox/moveit_test_ws/install[0m' finished with return code '[1m0[0m'[0m
+[[36mbaxter_ikfast_left_arm_plugin[0m] [1m[34m==>[0m '[1m/home/shangyi/ws/sandbox/moveit_test_ws/build/baxter_ikfast_left_arm_plugin/build_env.sh /usr/bin/make --jobserver-fds=3,5 -j[0m' [30m[1min[0m '[1m/home/shangyi/ws/sandbox/moveit_test_ws/build/baxter_ikfast_left_arm_plugin[0m'[0m
+[35m[1mScanning dependencies of target baxter_left_arm_moveit_ikfast_plugin
+[0m[100%] [32mBuilding CXX object CMakeFiles/baxter_left_arm_moveit_ikfast_plugin.dir/src/baxter_left_arm_ikfast_moveit_plugin.cpp.o
+[0m[31m[1mLinking CXX shared library /home/shangyi/ws/sandbox/moveit_test_ws/devel/lib/libbaxter_left_arm_moveit_ikfast_plugin.so
+[0m[100%] Built target baxter_left_arm_moveit_ikfast_plugin
+[[36mbaxter_ikfast_left_arm_plugin[0m] [32m<==[0m '[1m/home/shangyi/ws/sandbox/moveit_test_ws/build/baxter_ikfast_left_arm_plugin/build_env.sh /usr/bin/make --jobserver-fds=3,5 -j[0m' finished with return code '[1m0[0m'[0m

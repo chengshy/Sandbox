@@ -1,0 +1,8 @@
+prefix=/home/shangyi/ws/sandbox/moveit_test_ws/devel
+
+Name: r2_moveit_generated
+Description: Description of r2_moveit_generated
+Version: 1.0.2
+Cflags: 
+Libs: -L/home/shangyi/ws/sandbox/moveit_test_ws/devel/lib 
+Requires: 
